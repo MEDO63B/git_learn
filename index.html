@@ -16,10 +16,26 @@
 				content: " !";
 				color: green;
 			}
+			.name
+			{
+				transition: transform 1s ease-in-out;
+				animation: move 3s infinite;
+			}
+			@keyframes move
+			{
+				50% 
+				{
+					transform: translateX(150px);
+				}
+				100%
+				{
+					transform: translateX(0px);
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<h1>Hello</h1><b>Medo</b>
+		<h1>Hello</h1><div class="name">Medo</div>
 		<p>This is new update</p>
 	</body>
 </html>
